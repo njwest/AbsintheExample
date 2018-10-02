@@ -31,11 +31,11 @@ Mutation examples:
 ```graphql
 mutation CreateUser{
 	createUser(
-    first_names:"John",
-    surname: "Doe",
-    email:"foo@bar.baz",
-    password: "scoobyDoo",
-    password_confirmation: "scoobyDoo"
+	    first_names:"John",
+	    surname: "Doe",
+	    email:"foo@bar.baz",
+	    password: "scoobyDoo",
+	    password_confirmation: "scoobyDoo"
    	) {
 	  token
 	}
