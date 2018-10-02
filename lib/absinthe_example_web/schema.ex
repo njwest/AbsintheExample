@@ -1,6 +1,8 @@
 defmodule AbsintheExampleWeb.Schema do
   use Absinthe.Schema
   import_types AbsintheExampleWeb.Schema.UserTypes
+  # NOTE: Line 5 is the non-existent type
+  import_types AbsintheExampleWeb.Schema.NonExistentType
   import_types Absinthe.Type.Custom
 
   alias AbsintheExampleWeb.Resolvers
