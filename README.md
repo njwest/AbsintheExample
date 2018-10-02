@@ -7,7 +7,7 @@ The master branch of this repo contains an Absinthe schema.ex error for r&d purp
 On Line 5 of `lib/absinthe_example_web/schema.ex` is an import of a type that does not exist:
 
 ```elixir
-import_types AbsintheExampleWeb.Schema.NonexistentType
+import_types AbsintheExampleWeb.Schema.NonExistentType
 ```
 
 This import causes a vague error: `...Router.Helpers is not loaded and could not be found`.
@@ -30,15 +30,15 @@ Mutation examples:
 
 ```graphql
 mutation CreateUser{
-	createUser(
-	    first_names:"John",
-	    surname: "Doe",
-	    email:"foo@bar.baz",
-	    password: "scoobyDoo",
-	    password_confirmation: "scoobyDoo"
-   	) {
-	  token
-	}
+createUser(
+    first_names:"John",
+    surname: "Doe",
+    email:"foo@bar.baz",
+    password: "scoobyDoo",
+    password_confirmation: "scoobyDoo"
+ 	) {
+  token
+}
 }
 
 mutation UserLogin{
